@@ -1,0 +1,20 @@
+body, td {
+
+}
+.center-container {
+    text-align: center; /* Aligns the image horizontally */
+    
+    justify-content: space-around; /* Distribute items evenly with equal space around them */
+}
+}
+.center-container img{ 
+    display: block;  /* Ensures the image behaves as a block element */
+    margin: 0 auto;     /* Centers the image horizontally within its container */
+    
+}
+  
+a {
+}
+
+a:hover {
+}
