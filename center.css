@@ -1,6 +1,28 @@
-body, td {
-
+body, td {     
+            margin:0;    
+}          
+.container-relative{
+    position:absolute;
+    top:10px;
 }
+
+.bacground-container{
+    background-image:url(Images/bg.jpg);
+    position: relative;
+    background-size:cover; 
+    background-repeat:no-repeat;
+    background-attachment:fixed;   
+   padding-top:500px;
+   padding-bottom:500px;
+}
+     
+.right-container{
+           text-align: right; /* Aligns  horizontally */
+    
+}
+
+
+
 .center-container {
     text-align: center; /* Aligns the image horizontally */
     
@@ -10,9 +32,12 @@ body, td {
 .center-container img{ 
     display: block;  /* Ensures the image behaves as a block element */
     margin: 0 auto;     /* Centers the image horizontally within its container */
-    
 }
-  
+                                 .stayconnected-container{ 
+                                    text-align: center; /* Aligns the image horizontally */
+                                   justify-content: space-around; /* Distribute items evenly with equal space around them */
+                                  }
+                                                        
 a {
 }
 
