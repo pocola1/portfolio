@@ -1,28 +1,18 @@
 body, td {     
+    background-image:url(Images/bg.jpg);
+    background-size:cover; 
+    background-repeat:no-repeat;
+    background-attachment:fixed;   
             margin:0;    
 }          
 .container-relative{
     position:absolute;
     top:10px;
 }
-
-.bacground-container{
-    background-image:url(Images/bg.jpg);
-    position: relative;
-    background-size:cover; 
-    background-repeat:no-repeat;
-    background-attachment:fixed;   
-   padding-top:500px;
-   padding-bottom:500px;
-}
-     
 .right-container{
            text-align: right; /* Aligns  horizontally */
     
 }
-
-
-
 .center-container {
     text-align: center; /* Aligns the image horizontally */
     
@@ -33,13 +23,88 @@ body, td {
     display: block;  /* Ensures the image behaves as a block element */
     margin: 0 auto;     /* Centers the image horizontally within its container */
 }
-                                 .stayconnected-container{ 
-                                    text-align: center; /* Aligns the image horizontally */
-                                   justify-content: space-around; /* Distribute items evenly with equal space around them */
-                                  }
-                                                        
-a {
+.stayconnected-container{ 
+    text-align: center; /* Aligns the image horizontally */
+    justify-content: space-around; /* Distribute items evenly with equal space around them */
+}                              
+.aboutmep{
+    color:white;
+    font-size:15px;
+    line-height:1.5em;
+    background-color:#085c4c;
+    padding:10px;
+    border:black 1px solid;
+    margin-left:350px;
+    margin-right:350px;
+    margin-top:30px;
+    margin-bottom:10px;
+     border-radius: 25px;
 }
-
-a:hover {
+.toppage-container{
+    color:gray;
+    font-size:20px;
+    text-align:left;
+    line-height:3em;
+    background-color:#000000;
+    padding-left:100px;
 }
+.botpage-container{
+    color:gray;
+    font-size:15px;
+    line-height:3em;
+    background-color:#000000;
+    margin-top:10px;
+    text-align:right;
+    padding-right:100px;
+    bottom: 0%; 
+}
+.inline-container{
+    display:inline;
+}
+.backgroundtext{
+             color:white;
+             font-size:15px;
+}
+.policy-container{
+    color:black;
+    font-size:15px;
+    line-height:1.5em;
+    background-color:#FFFFFF;
+    padding-right:35px;
+    padding-left:35px; 
+    padding-top:20px;
+    padding-bottom:20px;
+    margin-left:200px;
+    margin-right:200px;
+    margin-top:30px;
+    margin-bottom:10px;
+}
+.greyback-container{
+       background-color:#808080;
+       margin-bottom:10px;
+       
+}
+.line::before, .line::after{
+    content:"";
+    height:2px;
+    background-color:#FFFFFF;
+    display:block;    
+}
+.line{
+      display:grid;
+  grid-template-columns:repeat(3,1fr);  
+  align-items:center;
+  column-gap:0.1%;
+}
+.divider-container{
+    display: block;
+      background-color:#808080;
+       padding-bottom:50px;
+       float: left;
+       width: 100%;
+       
+}
+.space-container {
+    display: flex;
+    justify-content: space-between; /* Texts will be on opposite sides */
+  }
