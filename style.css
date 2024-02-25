@@ -1,0 +1,239 @@
+body, td {     
+    background-image:url(Images/bg.jpg);
+    background-size:cover; 
+    background-repeat:no-repeat;
+    background-attachment:fixed;   
+            margin:0;    
+}          
+.container-relative{
+    position:absolute;
+    top:10px;
+}
+.right-container{
+           text-align: right; /* Aligns  horizontally */
+    
+}
+.center-container {
+    text-align: center; /* Aligns the image horizontally */
+    
+    justify-content: space-around; /* Distribute items evenly with equal space around them */
+}
+}
+.center-container img{ 
+    display: block;  /* Ensures the image behaves as a block element */
+    margin: 0 auto;     /* Centers the image horizontally within its container */
+}
+.stayconnected-container{ 
+    text-align: center; /* Aligns the image horizontally */
+    justify-content: space-around; /* Distribute items evenly with equal space around them */
+}                              
+.aboutmep{
+    color:white;
+    font-size:15px;
+    line-height:1.5em;
+    background-color:#085c4c;
+    padding:10px;
+    border:black 1px solid;
+    margin-left:350px;
+    margin-right:350px;
+    margin-top:30px;
+    margin-bottom:10px;
+     border-radius: 25px;
+}
+.toppage-container{
+    color:gray;
+    
+    font-size:20px;
+    text-align:left;
+    line-height:3em;
+    background-color:#000000;
+    padding-left:100px;
+}
+.botpage-container{
+    color:gray;
+    font-size:15px;
+    line-height:3em;
+    background-color:#000000;
+    margin-top:10px;
+    text-align:right;
+    padding-right:100px;
+    bottom: 0%; 
+}
+.inline-container{
+    display:inline;
+}
+.backgroundtext{
+             color:white;
+             font-size:15px;
+}
+.policy-container{
+    color:black;
+    font-size:15px;
+    line-height:1.5em;
+    background-color:#FFFFFF;
+    padding-right:35px;
+    padding-left:35px; 
+    padding-top:20px;
+    padding-bottom:20px;
+    margin-left:200px;
+    margin-right:200px;
+    margin-top:30px;
+    margin-bottom:10px;
+}
+.greyback-container{
+       background-color:#808080;
+       margin-bottom:10px;
+       
+}
+.line::before, .line::after{
+    content:"";
+    height:2px;
+    background-color:#FFFFFF;
+    display:block;    
+}
+.line{
+      display:grid;
+  grid-template-columns:repeat(3,1fr);  
+  align-items:center;
+  column-gap:0.1%;
+}
+.divider-container{
+    display: block;
+      background-color:#808080;
+       padding-bottom:50px;
+       float: left;
+       width: 100%;
+       
+}
+.space-container {
+    display: flex;
+    justify-content: space-between; /* Texts will be on opposite sides */
+  }
+.imagehome-container{
+              background-repeat:no-repeat; 
+              
+              position: relative; /* Needed for absolute positioning of overlay */
+              width: 100%;
+              height: 200px; /* Set the height to viewport height */  
+               overflow: hidden; /* Ensure image doesn't overflow its container */   
+               object-fit: cover; /* Ensure the image covers the entire container */ 
+               object-position:center;
+               background-position: center;                                  
+}  
+.imagehome-container img{
+     
+              background-repeat:no-repeat;
+              width: 100%;
+              height: auto; /* Allow the image to maintain its aspect ratio */
+               position: absolute;                         
+     transform: translate(-50%, -50%); /* Center the image within the container */
+   top: 50%; /* Position the top of the image in the middle of the container */
+    left: 50%; /* Position the left side of the image in the middle of the container */
+}
+.dropbtn {
+  background-color: #000000;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  background-color: ;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #003000}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.heater-container{
+               background-repeat:no-repeat; 
+              
+              position: relative; /* Needed for absolute positioning of overlay */
+              width: 99.1vw;
+              height: 65vh; /* Set the height to viewport height */  
+               overflow: hidden; /* Ensure image doesn't overflow its container */   
+               background-size: cover; /* Ensure the image covers the entire container */ 
+               object-position:center;
+               background-position: center; 
+}  
+.heater-container img{
+              background-repeat:no-repeat;
+              width: 100%;
+              height: 100%; /* Allow the image to maintain its aspect ratio */
+               position: absolute;                         
+}
+.gallery{
+      width: 300px; /* Adjust the width of the container as needed */
+  height: auto; 
+  cursor:zoom-in;
+float=left;
+  padding:10px;
+}
+.gallery img {
+  width: 100%; /* Make the image take the full width of its container */
+ 
+  height: auto; /* Automatically adjust the height to maintain the image's aspect ratio */
+  
+}
+
+.left-image{
+    float:left;
+    margin-right:10px;
+    height:50px;
+    width:100px;
+    position:relative;
+    cursor:zoom-in;
+  
+}
+.fullsize{
+    z-index:999;
+    cursor:zoom-out;
+    display:block;
+    position:fixed;
+    left:100px;
+    height:90%;
+    width:90%;
+    top:30px;
+}
+.projectbox{
+   
+     width: 300px; /* Set the width of the box */
+        height: 200px; /* Set the height of the box */
+        border: 2px solid black; /* Add a border to the box */
+        padding: 10px; /* Add padding inside the box */
+        box-sizing: border-box; /* Include border and padding in the width and height */
+        text-align="center";
+}
+.projectbox img{
+      max-width: 100%; /* Ensure the image does not exceed the box's width */
+        max-height: 100%; /* Ensure the image does not exceed the box's height */
+        display: block; /* Make the image a block element */
+        margin: auto; /* Center the image horizontally within the box */
+  
+}

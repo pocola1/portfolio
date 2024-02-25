@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>                                  
+<link rel="stylesheet" href="../../style.css">  <!--link to CSS file-->
+<script src="../../Script.js" href="../../Script.js"> </script>
+<meta http-equiv="Expires" content="Fri, Jan 01 1900 00:00:00 GMT">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Lang" content="en">
+<meta name="author" content="">
+<meta http-equiv="Reply-to" content="@.com">
+<meta name="generator" content="PhpED 6.0">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="creation-date" content="06/01/2011">
+<meta name="revisit-after" content="15 days">
+<title>Heater</title>
+</head>
+<body>
+
+
+ <div class="space-container toppage-container">
+         <div class="left-text">
+     <a href="index.html" target="_self">Home</a> <!--sending to index home page-->
+       <a href="Aboutme.html" target="_self">About me</a>      <!--sending to about me  page-->
+       <div class="dropdown">
+       <button class="dropbtn"><a href="Projects.html">Projects</a></button>
+       <div class="dropdown-content">
+       <a href="Projects/Twincat.html">Twincat</a>
+         <a href="#">Websites</a>
+       </div>
+       </div>
+      </div>
+      <div class="right-text">
+     <img src="../../Images/discord.png" width="50" height="50" alt="error" title="pocola1">
+         <a href="https://www.facebook.com/profile.php?id=100007101047682" target="_blank">
+         <img src="../../Images/facebook.png" width="50" height="50" alt="error" title="Radostin Dimitrov Stefanov" >  </a>
+         <a href="https://www.instagram.com/radostin_._dimitrov/" target="_blank">
+         <img src="../../Images/inst.jpg" width="80" height="50" alt="error" title="radostin_._dimitrov"> </a>
+         <a href="https://www.linkedin.com/in/radostin-dimitrov-713b32254/" target="_blank">
+         <img src="../../Images/lin.png" width="70" height="50" alt="error" title="Radostin Dimitrov"></a>
+         <a href="https://twitter.com/RadostinDimit10" target="_blank">
+         <img src="../../Images/X.png" width="50" height="50" alt="error" title="RadostinDimit10" ></a>
+         </div>
+     </div>    
+              <div class="heater-container">
+              <img src="../../Images/Heater-GIF.gif">
+                      </div>
+                      <main class="divider-container">
+    <div class="greyback-container">
+     <div clas="stayconnected-container zoom">
+                      <img src="../../Images/heater1.png" id="zoomImg" class="gallery" onclick="zoomin(this)">     
+                      <img src="../../Images/heater2.png" id="zoomImg" class="gallery" onclick="zoomin(this)" >
+                      <img src="../../Images/heater3.png" id="Zoomimg" class="gallery" onclick="zoomin(this)">
+                      <img src="../../Images/heater4.png"  id="Zoomimg" class="gallery" onclick="zoomin(this)">
+                      <img src="../../Images/heater5.png" id="Zoomimg" class="gallery" onclick="zoomin(this)">
+                      </div>
+          <div class="policy-container">
+                   <h1><b>Heater</b></h1> 
+                   <h2>Simulator of Heater unit</h2>
+                   <p>So this is pretty simple code using really IF and END_IF. Not meant for a PLC controller but it does work as a standalone simulator just to get the logic how a normal heater unit works. Just a quick explanation of the code before I show a short GIF how it works:
+-The code is simple you have a couple BOOL parts for the buttons as well heater 1, 2 and cooler. So why there is 2 heaters ? well because I made it tha    t whatever we are below the minimum tempeture that is 10, to heat up the heater faster. After we are above 10 it will only work with 1 heater.  In a real life it be a bit diffrent but we are using this as a small example. We are using here a few variables for the buttons that in real life are a big requrements that we have " oldbtn1 := btn1; oldbtn2 := btn2; ". So what is this ? These ones are normally reqremed if you are doing a setup like lets make an example: " You press a button." Normally you press it and let it go but a machine has a high chance to take in account the miliseconds of that press so to make  sure it only takes one signal going form 0 to 1 and not 0 to 1 and then 1 to 0 because it detected a second press of the same button we use this command to make sure we have time to do it.  </p>
+<h2>Example of button and old button signals</h2>
+<p><img src="../../Images/signal-explain.png" class="left-image" onclick="zoomin(this)">Made in paint... I'm an Engineer not an artist... So yeh kind of to imagine it that the old statement woudl be equall to the new one and then the new one when it si 0 it will be equall to the old one ... yeah a bit confusing to explain. :D But now time to show the program in work.</p>
+<h2>Simulation</h2>
+<p>  The end resoult can be seen in a working order with a few variations depending what we have set it up at that moment with the button on the top right.
+ <ul style="list-style-type:circle">
+<li>Picture one, the device have just started turning on both heaters.</li>
+<li>the device is set on 12 C as it starts to heat up whatever time it reaches the tempeture it stops.</li>
+<li>As it finally reaches 17 degrees on that setting the heater 2 turns off as the device turns on only heater 1 whatever the tempeture drops below 17 degrees.</li>
+<li>Another picture just showing a bit longer graph on 28 C</li>
+<li>As it climbs on 40 degrees we leave it there.</li>
+<li>Finnaly as it reaches 40 degrees the cooler turns on whatever it is equall or greater just for incase the device not to burn.</li>
+</ul>   
+In real life scenerio it woudl be a bit diffrent as it would not be turning on right way the cooler it would be only above 40 degrees but to show it working we simulate it a bit here. But in real life we make it a bit diffrent as we would need to have a Hysteresis to prevent excessively rapid cycling of the equipment around the setpoint. </p>           
+ </div>
+</div>
+              </main>
+                         <section class=backgroundtext>
+        <h2 align="center"> Stay Connected</h2>
+              <div class="stayconnected-container">
+         <img src="../../Images/discord.png" width="50" height="50" alt"error" title="pocola1">
+         <a href="https://www.facebook.com/profile.php?id=100007101047682" target="_blank">
+         <img src="../../Images/facebook.png" width="50" height="50" alt"error" title="Radostin Dimitrov Stefanov" >  </a>
+         <a href="https://www.instagram.com/radostin_._dimitrov/" target="_blank">
+         <img src="../../Images/inst.jpg" width="80" height="50" alt"error" title="radostin_._dimitrov"> </a>
+         <a href="https://www.linkedin.com/in/radostin-dimitrov-713b32254/" target="_blank">
+         <img src="../../Images/lin.png" width="70" height="50" alt"error" title="Radostin Dimitrov"></a>
+         <a href="https://twitter.com/RadostinDimit10" target="_blank">
+         <img src="../../Images/X.png" width="50" height="50" alt"error" title="RadostinDimit10" ></a>
+         </div>
+    </section>
+                 <div class="botpage-container">
+                <div class="space-container">
+                <div class="left-text">
+                  <p  class=inline-container >Radostin Dimitrov Stefanov © 2024</p>
+                  </div>
+                        <div class="right-text">
+                 <a href="policy.html" target="_self">Privacy Policy</a> 
+                 </div>
+             </div>                                          
+                </div>    
+  
+</body>
+</html>
