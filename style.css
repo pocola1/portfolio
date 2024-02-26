@@ -15,10 +15,9 @@ body, td {
 }
 .center-container {
     text-align: center; /* Aligns the image horizontally */
-    
     justify-content: space-around; /* Distribute items evenly with equal space around them */
 }
-}
+
 .center-container img{ 
     display: block;  /* Ensures the image behaves as a block element */
     margin: 0 auto;     /* Centers the image horizontally within its container */
@@ -82,7 +81,7 @@ body, td {
 }
 .greyback-container{
        background-color:#808080;
-       margin-bottom:10px;
+       padding-bottom:20px;
        
 }
 .line::before, .line::after{
@@ -221,19 +220,97 @@ float=left;
     width:90%;
     top:30px;
 }
-.projectbox{
-   
-     width: 300px; /* Set the width of the box */
-        height: 200px; /* Set the height of the box */
-        border: 2px solid black; /* Add a border to the box */
-        padding: 10px; /* Add padding inside the box */
-        box-sizing: border-box; /* Include border and padding in the width and height */
-        text-align="center";
+.whitebutton{
+    color:black;
+    font-size:15px;
+    line-height:1.5em;
+    background-color:#ffffff;
+    padding:10px;
+    border:white 1px solid;
+    margin-left:350px;
+    margin-right:350px;
+    margin-top:30px;
+    margin-bottom:10px;
+     border-radius: 25px;
 }
-.projectbox img{
-      max-width: 100%; /* Ensure the image does not exceed the box's width */
-        max-height: 100%; /* Ensure the image does not exceed the box's height */
-        display: block; /* Make the image a block element */
-        margin: auto; /* Center the image horizontally within the box */
-  
+.homeContactWrapper{
+   background-color: #000;
+  background-size: auto 100%;
+  background-position: left center;
+  min-height: 428px;
+  color: #fff;
+  background-repeat: no-repeat;
+  line-height: 1.4;
+}
+.textalignright{
+    text-align: right;
+    float:right;
+}
+.contactbanner{
+        margin-top:1rem;
+        padding-left:20px;
+        display: block;
+        color:white;
+        font-size:30px;
+         line-height:1.5em;
+         background-color:#000000;
+         padding-right:35px;
+          text-align: right;
+    padding-right:35px;
+    padding-top:20px;
+    padding-bottom:220px;
+}
+.contactbanner img{
+    width: 1000px;
+     float:left;
+     display: block;  /* Ensures the image behaves as a block element */
+    height: 400px;
+}
+.contact-container{
+    color:white;
+    font-size:15px;
+    line-height:1.5em;
+    background-color:#000000;
+    padding-right:35px;
+    padding-left:35px; 
+    padding-top:20px;
+    padding-bottom:20px;
+    margin-left:200px;
+    margin-right:200px;
+    margin-top:30px;
+    margin-bottom:10px;
+    
+}
+.contact-container img{
+    width:50%;
+    height:50%;
+    float:left;
+}
+.blackback-container{
+       background-color:#000000;
+       margin-bottom:10px;
+       
+}
+.blackdivider-container{
+    display: block;
+      background-color:#000000;
+       padding-bottom:50px;
+       float: left;
+       width: 100%;
+}
+.projectgallery{
+    margin:30px auto;
+    height:250px;
+    width:600px;
+     text-align: center;
+     text-align: center;
+     display: flex;
+}
+.projectgallery img{
+    width:100%;
+    height:100%;
+}
+.projectgalleryspace{
+    padding-left:11px;
+    padding-right:11px;
 }
