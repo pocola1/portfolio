@@ -110,7 +110,6 @@ body, td {
   }
 .imagehome-container{
               background-repeat:no-repeat; 
-              
               position: relative; /* Needed for absolute positioning of overlay */
               width: 100%;
               height: 200px; /* Set the height to viewport height */  
@@ -305,10 +304,12 @@ float=left;
      text-align: center;
      text-align: center;
      display: flex;
+     
 }
 .projectgallery img{
     width:100%;
     height:100%;
+
 }
 .projectgalleryspace{
     padding-left:11px;
