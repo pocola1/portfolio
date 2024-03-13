@@ -19,16 +19,18 @@
 <body> 
     <div class="space-container toppage-container">
         <div class="left-text">
-            <a href="index.html" target="_self">Home</a> <!--sending to index home page-->
-            <a href="Aboutme.html" target="_self">About me</a>      <!--sending to about me  page-->
+        <div class="flextext">
+            <a href="index.html" target="_self" class="spacebutton">Home</a> <!--sending to index home page-->
+            <a href="Aboutme.html" target="_self" class="spacebutton" >About me</a>      <!--sending to about me  page-->
             <div class="dropdown">
-            <button class="dropbtn"><a href="Projects.html">Projects</a></button>
+            <button class="dropbtn"><a href="Projects.html" class="pressbutton4">Projects</a></button>
                 <div class="dropdown-content">
-                    <a href="Projects/Twincat.html">Twincat</a>
+                    <a href="Projects/TwinCAT.html">TwinCAT</a>
                     <a href="Projects/Websites.html">Websites</a>
                 </div>
             </div>
-             <a href="contact.html" target="_self">Contact me</a>      <!--sending to contacts  page-->
+             <a href="Contact.html" target="_self" class="spacebutton">Contact me</a>      <!--sending to contacts  page-->
+         </div>
          </div>
 
         <div class="right-text">
@@ -43,30 +45,46 @@
          <img src="Images/X.png" width="50" height="50" alt="error" title="RadostinDimit10" ></a>
          </div>
      </div>    
+   
 
-
-              <div class="imagehome-container">
+              <div class="imagehome-container" alt="mainpagebanner">
                 <img src="Images/home.jpg">
                </div>
+                 <div class="textoverimagehome">
+       <h4>The Day We Stop Learning,<br></br> Is The Day We Die...</h4>
+       </div>   
+             
+               
 
 
     <div class="greyback-container ">
          <div class="line"><h1 align="center">Featured Projects</h1></div>
         <div class="projectgallery">
+            <div class="contact-row">
+                
                 <a href="Projects/TwinCAT/Heater.html" target="_blank">
                 <img src="Images/Heater.png" alt="error" title="Heater" >
                  <h3>Heater Simulation</h3></a>
              </div>
+             <a href="Projects/Websites/my-website.html" target="_blank">
+                <img src="Images/mywebsite.jpg" alt="error" title="Heater" >
+                 <h3>My Website</h3></a>
+             </div>
              <br></br>
-             <a href="projects.html" target="_blank"> <h3 align="center">SEE ALL PROJECTS</h3></a>
-     </div>  
+             <div style="text-align:center;">
+             <button class="pressbutton3" type="button" onclick="location.href='Projects.html'" align="center">SEE ALL PROJECTS</button>
+             </div>
+        </div>  
          
 
          <div class="contactbanner">
             <img src="Images/contact.jpg" alt="homebanner" >
             <h1>Having Questions?</h1>
-                <p>If you have any question or you need of support <a href="Contact.html" target="_blank">Contact me </a></span>!</p>
+                <p>If you have any question or<pre></pre> you need of support Contact me!</p>
+                <button class="pressbutton" type="button" onclick="location.href='Contact.html'">CONTACT ME</button>
          </div>
+
+
                          <section class="backgroundtext">
          <h2 align="center"> Stay Connected</h2>
               <div class="stayconnected-container">
@@ -83,9 +101,9 @@
                        </section>
                 <div class="space-container botpage-container">
                 <div class="left-text">
-                  <p  class=inline-container >Radostin Dimitrov Stefanov © 2024</p>
+                  <p  class="inline-container">Radostin Dimitrov Stefanov © 2024</p>
                   </div>
-                        <div class="right-text">
+                        <div class="right-text hyperlink">
                  <a href="policy.html" target="_self">Privacy Policy</a> 
                  </div>
              </div>                                          

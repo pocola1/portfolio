@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <link rel="stylesheet" href="style.css">  <!--link to CSS file-->
+<script src="../../Script.js" href="../../Script.js"> </script>
 <meta http-equiv="Expires" content="Fri, Jan 01 1900 00:00:00 GMT">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Cache-Control" content="no-cache">
@@ -19,61 +20,102 @@
 <body>
     <div class="space-container toppage-container">
          <div class="left-text">
-     <a href="index.html" target="_self">Home</a> <!--sending to index home page-->
-       <a href="Aboutme.html" target="_self">About me</a>      <!--sending to about me  page-->
-       <div class="dropdown">
-       <button class="dropbtn"><a href="Projects.html">Projects</a></button>
-       <div class="dropdown-content">
-       <a href="Projects/Twincat.html">Twincat</a>
-         <a href="Projects/Websites.html">Websites</a>
-       </div>
-       </div>
-        <a href="contact.html" target="_self">Contact me</a>      <!--sending to contacts  page-->
-      </div>
-      <div class="right-text">
-     <img src="Images/discord.png" width="50" height="50" alt="error" title="pocola1">
-         <a href="https://www.facebook.com/profile.php?id=100007101047682" target="_blank">
-         <img src="Images/facebook.png" width="50" height="50" alt="error" title="Radostin Dimitrov Stefanov" >  </a>
-         <a href="https://www.instagram.com/radostin_._dimitrov/" target="_blank">
-         <img src="Images/inst.jpg" width="80" height="50" alt="error" title="radostin_._dimitrov"> </a>
-         <a href="https://www.linkedin.com/in/radostin-dimitrov-713b32254/" target="_blank">
-         <img src="Images/lin.png" width="70" height="50" alt="error" title="Radostin Dimitrov"></a>
-         <a href="https://twitter.com/RadostinDimit10" target="_blank">
-         <img src="Images/X.png" width="50" height="50" alt="error" title="RadostinDimit10" ></a>
-         </div>
-     </div>    
-
-                     <main class="blackdivider-container">
-     <div class="blackback-container">
-          <div class="contact-container">
-          <img src="Images/mail.png" width="50" height="50" alt"snail" title="mail snail">
-          <p>Well.. dont have this developed yet, but.. you can always email me here and I try to respond as fast as possible. </p><a href="mailto:radostindimitrov09@gmaill.com">radostindimitrov09@gmaill.com</a>
-</div>
-</div>
-              </main>
-                         <section class="backgroundtext">
-        <h2 align="center"> Stay Connected</h2>
-              <div class="stayconnected-container">
-         <img src="Images/discord.png" width="50" height="50" alt"error" title="pocola1">
-         <a href="https://www.facebook.com/profile.php?id=100007101047682" target="_blank">
-         <img src="Images/facebook.png" width="50" height="50" alt"error" title="Radostin Dimitrov Stefanov" >  </a>
-         <a href="https://www.instagram.com/radostin_._dimitrov/" target="_blank">
-         <img src="Images/inst.jpg" width="80" height="50" alt"error" title="radostin_._dimitrov"> </a>
-         <a href="https://www.linkedin.com/in/radostin-dimitrov-713b32254/" target="_blank">
-         <img src="Images/lin.png" width="70" height="50" alt"error" title="Radostin Dimitrov"></a>
-         <a href="https://twitter.com/RadostinDimit10" target="_blank">
-         <img src="Images/X.png" width="50" height="50" alt"error" title="RadostinDimit10" ></a>
-         </div>
-    </section>
-                 <div class="botpage-container">
-                <div class="space-container">
-                <div class="left-text">
-                  <p  class="inline-container" >Radostin Dimitrov Stefanov © 2024</p>
-                  </div>
-                        <div class="right-text">
-                 <a href="policy.html" target="_self">Privacy Policy</a> 
+         <div class="contact-row">
+            <a href="index.html" target="_self">Home</a> <!--sending to index home page-->
+            <a href="Aboutme.html" target="_self">About me</a>      <!--sending to about me  page-->
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="Projects.html">Projects</a></button>
+                    <div class="dropdown-content">
+                        <a href="Projects/Twincat.html">Twincat</a>
+                            <a href="Projects/Websites.html">Websites</a>
+                           
+                    </div>
+                </div>
+                <a href="contact.html" target="_self">Contact me</a>      <!--sending to contacts  page-->
                  </div>
-             </div>                                          
+        </div>
+        <div class="right-text">
+            <img src="Images/discord.png" width="50" height="50" alt="error" title="pocola1">
+                <a href="https://www.facebook.com/profile.php?id=100007101047682" target="_blank">
+             <img src="Images/facebook.png" width="50" height="50" alt="error" title="Radostin Dimitrov Stefanov" >  </a>
+             <a href="https://www.instagram.com/radostin_._dimitrov/" target="_blank">
+              <img src="Images/inst.jpg" width="80" height="50" alt="error" title="radostin_._dimitrov"> </a>
+             <a href="https://www.linkedin.com/in/radostin-dimitrov-713b32254/" target="_blank">
+             <img src="Images/lin.png" width="70" height="50" alt="error" title="Radostin Dimitrov"></a>
+             <a href="https://twitter.com/RadostinDimit10" target="_blank">
+                 <img src="Images/X.png" width="50" height="50" alt="error" title="RadostinDimit10" ></a>
+        </div>
+    </div>    
+
+
+     <main class="blackdivider-container">
+        <div class="blackback-container">
+            <div class="contact-container ">
+                <img src="Images/mail.png"  alt"snail">
+
+
+                <form action="#" method="post">
+                <div class="contactform">
+                  <div class="contact-row">
+                   <div class="contactform">  <h3>Name</h3>
+                     <input name="Name" placeholder="Text"/>
+                     </div>
+                        <div class="contactform">
+                        <h3 >Email</h3>
+                        <input name="email" type="email" placeholder="Email"/>
+                        </div>
+                           <div class="contactform">
+                        <h3>Phone Number</h3>
+                        <input name="Phone Number" type="tel" placeholder="Number">
+                        </div>
+                   </div>
+             <div>
+                <h3>Your Message</h3>
+                <textarea name="Message" type="message" placeholder="Message" id="textbox" rows="10" cols="70"></textarea>
+               </div>
+
+
+                 <button type="submit" class="pressbutton2">Send</button>
+               </div>
+
+
+                 <p>We take your privacy seriously and will only use your personal information to administer your account and to provide the products and services you have requested from us.
+
+For more information please visit our privacy policy.</p>
+                </form>
+                
+                
+                <p>Well.. dont have this developed yet, but.. you can always email me here and I try to respond as fast as possible. </p><a href="mailto:radostindimitrov09@gmaill.com">radostindimitrov09@gmaill.com</a>
+              </main>
+         
+              <section class="backgroundtext">
+                <h2 align="center"> Stay Connected</h2>
+                <div class="stayconnected-container">
+                    <img src="Images/discord.png" width="50" height="50" alt"error" title="pocola1">
+                     <a href="https://www.facebook.com/profile.php?id=100007101047682" target="_blank">
+                     <img src="Images/facebook.png" width="50" height="50" alt"error" title="Radostin Dimitrov Stefanov" >  </a>
+                     <a href="https://www.instagram.com/radostin_._dimitrov/" target="_blank">
+                    <img src="Images/inst.jpg" width="80" height="50" alt"error" title="radostin_._dimitrov"> </a>
+                     <a href="https://www.linkedin.com/in/radostin-dimitrov-713b32254/" target="_blank">
+                     <img src="Images/lin.png" width="70" height="50" alt"error" title="Radostin Dimitrov"></a>
+                     <a href="https://twitter.com/RadostinDimit10" target="_blank">
+                    <img src="Images/X.png" width="50" height="50" alt"error" title="RadostinDimit10" ></a>
+                  </div>
+
+                </section>
+
+
+
+
+                 <div class="botpage-container">
+                    <div class="space-container">
+                        <div class="left-text">
+                            <p  class="inline-container" >Radostin Dimitrov Stefanov © 2024</p>
+                        </div>
+                        <div class="right-text">
+                            <a href="policy.html" target="_self">Privacy Policy</a> 
+                         </div>
+                    </div>                                          
                 </div>      <!--sending to policy page-->
 </body>
 </html>

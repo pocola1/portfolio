@@ -41,7 +41,6 @@ body, td {
 }
 .toppage-container{
     color:gray;
-    
     font-size:20px;
     text-align:left;
     line-height:3em;
@@ -53,10 +52,12 @@ body, td {
     font-size:15px;
     line-height:3em;
     background-color:#000000;
-    margin-top:10px;
+    padding-right:50px;
+    box-sizing: border-box;
     text-align:right;
-    padding-right:100px;
-    bottom: 0%; 
+    bottom: 100%;
+    width:100%; 
+
 }
 .inline-container{
     display:inline;
@@ -109,25 +110,36 @@ body, td {
     justify-content: space-between; /* Texts will be on opposite sides */
   }
 .imagehome-container{
-              background-repeat:no-repeat; 
-              position: relative; /* Needed for absolute positioning of overlay */
               width: 100%;
               height: 200px; /* Set the height to viewport height */  
                overflow: hidden; /* Ensure image doesn't overflow its container */   
-               object-fit: cover; /* Ensure the image covers the entire container */ 
-               object-position:center;
-               background-position: center;                                  
+               object-fit: cover; /* Ensure the image covers the entire container */                                         
 }  
 .imagehome-container img{
      
               background-repeat:no-repeat;
               width: 100%;
               height: auto; /* Allow the image to maintain its aspect ratio */
-               position: absolute;                         
+           position: relative; /* Needed for absolute positioning of overlay */                     
      transform: translate(-50%, -50%); /* Center the image within the container */
    top: 50%; /* Position the top of the image in the middle of the container */
     left: 50%; /* Position the left side of the image in the middle of the container */
+      
+    background-position: center; 
 }
+.textoverimagehome{
+   position: absolute;
+    font-family: "Monospace", "Lucida Console";
+    color:#FF0000;
+  top: 20%;
+    text-decoration-thickness: 5px; 
+    font-size: 18px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
 .dropbtn {
   background-color: #000000;
   color: white;
@@ -162,8 +174,9 @@ body, td {
   display: block;
 }
 
+
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #003000}
+.dropdown-content a:hover {background-color: #1B1B1B;}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
@@ -256,14 +269,14 @@ float=left;
          padding-right:35px;
           text-align: right;
     padding-right:35px;
-    padding-top:20px;
-    padding-bottom:220px;
+    padding-top:10px;
+    padding-bottom:130px;
 }
 .contactbanner img{
     width: 1000px;
      float:left;
      display: block;  /* Ensures the image behaves as a block element */
-    height: 400px;
+    height: 500px;
 }
 .contact-container{
     color:white;
@@ -296,6 +309,7 @@ float=left;
        padding-bottom:50px;
        float: left;
        width: 100%;
+     
 }
 .projectgallery{
     margin:30px auto;
@@ -314,4 +328,113 @@ float=left;
 .projectgalleryspace{
     padding-left:11px;
     padding-right:11px;
+}
+textarea{
+    resize:none; 
+}
+.container{
+    display:flex;
+    flex-wrap:wrap;
+}
+ /* unvisited link and visited */
+a:link, a:visited, a:active {
+  color: #3ea6ff;
+  text-decoration:none;
+}
+
+.pressbutton{
+    background-color:#18f98f;
+    border:none;
+    transform:translate(-50%, -50%);
+    top:50%;
+    left:50%;
+    padding:20px 50px;
+    margin-top:30px;
+    font-size:30px;
+    font-weight:bold;
+}
+.pressbutton:hover{
+    background-color:#3ea6ff;
+    cursor:pointer;
+}
+
+.pressbutton4{
+    border:none;
+    transform:translate(-50%, -50%);
+    top:50%;
+    left:50%;
+    padding:20px;
+    margin-top:28px;
+    font-size:20px;
+}
+.pressbutton4:hover{
+    background-color:#1B1B1B;
+    cursor:pointer;
+}
+
+.pressbutton2{
+     background-color:#18f98f;
+    border:none;
+   
+    top:50%;
+    left:50%;
+    padding:10px 30px;
+    margin-top:20px;
+    margin-left:360px;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.pressbutton2:hover{
+    background-color:#3ea6ff;
+    cursor:pointer;
+}
+.pressbutton3{
+     background-color:#18f98f;
+    border:none;
+    transform:translate(-50%, -50%);
+    top:50%;
+    left:50%;
+    padding:10px 30px;
+    margin-top:20px;
+    margin-left:360px;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.pressbutton3:hover{
+    background-color:#3ea6ff;
+    cursor:pointer;
+}
+
+.spacebutton{
+    display: block;
+      padding-right:10px;
+      padding-left:10px;
+}
+.spacebutton:hover{
+    background-color:#1B1B1B;
+    cursor:pointer;
+}
+.hyperlink a:hover{
+     color:red;
+}
+.flextext{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+
+.contactform{
+    display:flex;
+    flex-direction:column;
+    max-width:max-content;
+}
+.contact-row{
+    display:flex;
+    gap:10px;
+    flex-direction:row;
+}
+.abitgap{
+    gap:10px
 }
